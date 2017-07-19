@@ -47,7 +47,8 @@ shinyServer(function(input, output, session) {
                 as.numeric((as.numeric(input$Demand)*(as.numeric(input$setUpCost)/as.numeric(input$bestGuess)))+(as.numeric(input$Demand)*((as.numeric(input$holdCost)*as.numeric(input$bestGuess))/(2*as.numeric(input$Demand)))))
       )
     )
-    colnames(sub)[1] <- "Metrics"
+    colnames(sub) <- c("Metric", "Formula", "Amount")
+    sub$Amount <- round(as.numeric(sub$Amount), 2)
     sub[,-2]
   }, options = list(dom = 't'))
 
@@ -68,7 +69,8 @@ shinyServer(function(input, output, session) {
 
       )
     )
-    colnames(sub2)[1] <- "Metrics"
+    colnames(sub2) <- c("Metric", "Formula", "Amount")
+    sub2$Amount <- round(as.numeric(sub2$Amount), 2)
     sub2[, -2]
   }, options = list(dom = 't'))
 
