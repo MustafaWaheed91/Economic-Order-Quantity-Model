@@ -23,6 +23,7 @@ shinyUI(navbarPage("Economic Order Quantity", collapsable = TRUE,
                                                           ,uiOutput("eoq_res")
                                                       ))
                                                     )
+
                                             ,tabPanel("Data",dataTableOutput("datT"))
 
                       ))
