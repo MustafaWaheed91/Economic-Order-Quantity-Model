@@ -9,7 +9,7 @@ shinyUI(navbarPage("Economic Order Quantity", collapsable = TRUE,
                         ,sliderInput(inputId ="setUpCost" , label = "Set-up Cost ($)", min =0 , max = 2000, value = 500 )
                         ,sliderInput(inputId ="prodCost" , label = "Prod Cost ($)", min =0 , max = 220 , value = 5)
                         ,numericInput(inputId = "bestGuess","Enter your Best Guess for Q", value = 300)
-                      ),
+                      ) ,
                       mainPanel(tabsetPanel(tabPanel("Visualization"
                                                       ,fluidRow(splitLayout(cellWidths = c("10%", "80%", "10%")
                                                                             ,br()
