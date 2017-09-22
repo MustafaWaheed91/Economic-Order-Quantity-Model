@@ -8,12 +8,13 @@ the discpline of Inventory Optimization or Management Science.
 
 
 
-This application also would require you to have:  :  
-*R version 3.3.3*
 
 
 
 The data for this example is  generated in the app itself.  
+
+This application also would require you to have:  :  
+*R version 3.3.3*
 
 
 
